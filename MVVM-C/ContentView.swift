@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var appCoordinator = AppCoordinator(path: NavigationPath())
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $appCoordinator.path) {
+            appCoordinator.build()
+                .navigationDestination(for: UserFlowCoordinator.self) { coordinator in
+                    coordinator.build()
+                }
+                .navigationDestination(for: SettingsFlowCoordinator.self) { coordinator in
+                    coordinator.build()
+                }
+                .navigationDestination(for: ProfileFlowCoordinator.self) { coordinator in
+                    coordinator.build()
+                }
         }
-        .padding()
+        .environmentObject(appCoordinator)
     }
 }
 
