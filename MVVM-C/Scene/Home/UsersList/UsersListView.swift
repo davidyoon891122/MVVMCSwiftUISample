@@ -12,21 +12,27 @@ struct UsersListView: View {
     
     @StateObject var viewModel: UsersListViewModel
     
-    let didClickUser = PassthroughSubject<User, Never>()
-    
     var body: some View {
-        List {
-            ForEach(viewModel.users) { user in
-                Button(action: {
-                    didClickUser.send(user)
-                }, label: {
-                    Text(user.name)
-                })
+        VStack {
+            List {
+                ForEach(viewModel.users) { user in
+                    Button(action: {
+                        viewModel.moveToUserDetails(user: user)
+                    }, label: {
+                        Text(user.name)
+                    })
+                }
             }
-        }
-        .navigationTitle("Users")
-        .onAppear {
-            viewModel.fetchUsers()
+            .navigationTitle("Users")
+            .onAppear {
+                viewModel.fetchUsers()
+            }
+            Spacer()
+            Button(action: {
+                viewModel.moveToNext()
+            }, label: {
+                Text("Go to Next Page")
+            })
         }
     }
 }

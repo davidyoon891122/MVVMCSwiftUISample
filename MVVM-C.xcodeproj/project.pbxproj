@@ -28,6 +28,7 @@
 		AD79C5012B5F9F7E007ED45D /* MainProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C5002B5F9F7E007ED45D /* MainProfileView.swift */; };
 		AD79C5052B5F9FB4007ED45D /* PersonalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C5042B5F9FB4007ED45D /* PersonalDetailsView.swift */; };
 		AD79C5072B5F9FBF007ED45D /* EducationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C5062B5F9FBF007ED45D /* EducationDetailsView.swift */; };
+		AD79C50E2B5FA97B007ED45D /* UserListNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C50D2B5FA97B007ED45D /* UserListNextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		AD79C5002B5F9F7E007ED45D /* MainProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileView.swift; sourceTree = "<group>"; };
 		AD79C5042B5F9FB4007ED45D /* PersonalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsView.swift; sourceTree = "<group>"; };
 		AD79C5062B5F9FBF007ED45D /* EducationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationDetailsView.swift; sourceTree = "<group>"; };
+		AD79C50D2B5FA97B007ED45D /* UserListNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				AD79C4E62B5F856F007ED45D /* UsersListView.swift */,
 				AD79C4E92B5F8595007ED45D /* UsersListViewModel.swift */,
 				AD79C4EB2B5F8659007ED45D /* User.swift */,
+				AD79C50D2B5FA97B007ED45D /* UserListNextView.swift */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -158,8 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				AD79C4F72B5F9892007ED45D /* MainSettingsView.swift */,
-				AD79C4F92B5F989C007ED45D /* PrivacySettingsView.swift */,
-				AD79C4FB2B5F98A8007ED45D /* CustomSettingsView.swift */,
+				AD79C5092B5FA6A4007ED45D /* Privacy */,
+				AD79C50A2B5FA6AB007ED45D /* Custom */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -168,10 +171,42 @@
 			isa = PBXGroup;
 			children = (
 				AD79C5002B5F9F7E007ED45D /* MainProfileView.swift */,
-				AD79C5042B5F9FB4007ED45D /* PersonalDetailsView.swift */,
-				AD79C5062B5F9FBF007ED45D /* EducationDetailsView.swift */,
+				AD79C50B2B5FA6B0007ED45D /* Personal */,
+				AD79C50C2B5FA6B6007ED45D /* Education */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		AD79C5092B5FA6A4007ED45D /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C4F92B5F989C007ED45D /* PrivacySettingsView.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		AD79C50A2B5FA6AB007ED45D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C4FB2B5F98A8007ED45D /* CustomSettingsView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		AD79C50B2B5FA6B0007ED45D /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C5042B5F9FB4007ED45D /* PersonalDetailsView.swift */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		AD79C50C2B5FA6B6007ED45D /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C5062B5F9FBF007ED45D /* EducationDetailsView.swift */,
+			);
+			path = Education;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +285,7 @@
 				AD79C5072B5F9FBF007ED45D /* EducationDetailsView.swift in Sources */,
 				AD79C4E12B5F808F007ED45D /* HomeView.swift in Sources */,
 				AD79C4FF2B5F9D62007ED45D /* ProfileFlowCoordinator.swift in Sources */,
+				AD79C50E2B5FA97B007ED45D /* UserListNextView.swift in Sources */,
 				AD79C4FA2B5F989C007ED45D /* PrivacySettingsView.swift in Sources */,
 				AD79C4F82B5F9892007ED45D /* MainSettingsView.swift in Sources */,
 				AD79C5052B5F9FB4007ED45D /* PersonalDetailsView.swift in Sources */,

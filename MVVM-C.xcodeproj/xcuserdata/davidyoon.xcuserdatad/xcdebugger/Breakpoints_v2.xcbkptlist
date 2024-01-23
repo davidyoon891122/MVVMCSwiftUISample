@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "386551EB-EF96-438E-AD6C-8E89BECC53F3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVM-C/Coordinator/UserFlowCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "bind(view:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "BC465CF3-9351-4ED8-B81B-2251B4E7340C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -46,10 +30,42 @@
             filePath = "MVVM-C/Coordinator/UserFlowCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "usersListView()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0BFCCC7B-55F6-4477-89ED-1B67B392D598 - 8b6991607ff8d5d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.usersListView() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "0BFCCC7B-55F6-4477-89ED-1B67B392D598 - 8b6991607ff8d590"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.usersListView() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,6 +82,53 @@
             endingLineNumber = "47"
             landmarkName = "build()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8EF3CA7A-4E17-4E58-B0AA-F12A1E15CA85 - 150981180f5a0078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "8EF3CA7A-4E17-4E58-B0AA-F12A1E15CA85 - 150981180f5a0078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "8EF3CA7A-4E17-4E58-B0AA-F12A1E15CA85 - 150981180f5a0078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,6 +145,53 @@
             endingLineNumber = "45"
             landmarkName = "build()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "360BD244-3B01-4331-868C-2AC174209615 - 150981180f5a01be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "360BD244-3B01-4331-868C-2AC174209615 - 150981180f5a01be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "360BD244-3B01-4331-868C-2AC174209615 - 150981180f5a01be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.UserFlowCoordinator.build() -&gt; some"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/MVVM-C/MVVM-C/Coordinator/UserFlowCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

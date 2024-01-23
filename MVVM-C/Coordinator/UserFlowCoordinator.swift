@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 enum UserPage: String, Identifiable {
-    case users, profile
+    case users, profile, next
     
     var id: String {
         self.rawValue
@@ -47,6 +47,8 @@ final class UserFlowCoordinator: ObservableObject {
             usersListView()
         case .profile:
             userDetailsView()
+        case .next:
+            userListNextView()
         }
     }
     
@@ -69,7 +71,7 @@ private extension UserFlowCoordinator {
     func usersListView() -> some View {
         let viewModel = UsersListViewModel()
         let usersListView = UsersListView(viewModel: viewModel)
-        bind(view: usersListView)
+        bind(viewModel: viewModel)
         
         return usersListView
     }
@@ -81,8 +83,23 @@ private extension UserFlowCoordinator {
         return userDetailsView
     }
     
-    func bind(view: UsersListView) {
-        view.didClickUser
+    func userListNextView() -> some View {
+        let userListNextView = UserListNextView()
+        
+        return userListNextView
+    }
+    
+    func bind(viewModel: UsersListViewModel) {
+        viewModel.moveToNextSubject
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] isNext in
+                if isNext {
+                    self?.showUserListNext()
+                }
+            })
+            .store(in: &cancellables)
+        
+        viewModel.moveToUserSubject
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] user in
                 self?.showUserProfile(for: user)
@@ -96,6 +113,11 @@ private extension UserFlowCoordinator {
     
     func showUserProfile(for user: User) {
         pushCoordinator.send(UserFlowCoordinator(page: .profile, userID: user.id))
+    }
+    
+    
+    func showUserListNext() {
+        pushCoordinator.send(UserFlowCoordinator(page: .next))
     }
     
 }
